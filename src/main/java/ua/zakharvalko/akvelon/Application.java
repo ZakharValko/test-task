@@ -4,7 +4,7 @@ public class Application {
     public static void main(String[] args) {
 
         BalanceVerificator verificator = new BalanceVerificator();
-        String toCheck = "(({[]}))";
+        String toCheck = "({()[]})";
         verificator.checkForBalance(toCheck);
 
     }

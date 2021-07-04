@@ -41,6 +41,9 @@ public class BalanceVerificator {
                         bracketsQueue.removeLast();
                     } else if (bracketsQueue.getLast() == '[' && current == ']') {
                         bracketsQueue.removeLast();
+                    } else {
+                        System.out.println("NOT BALANCED " + (i+1));
+                        return (i);
                     }
                 }
             }

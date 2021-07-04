@@ -5,9 +5,13 @@ import java.util.Deque;
 
 public class BalanceVerificator {
 
-        StringChecker stringChecker = new StringChecker();
+    StringChecker stringChecker;
 
-        public int checkForBalance(String str) {
+    public BalanceVerificator(StringChecker stringChecker) {
+        this.stringChecker = stringChecker;
+    }
+
+    public int checkForBalance(String str) {
 
             // Creating bracketsQueue, like a storage for brackets.
             Deque<Character> bracketsQueue = new ArrayDeque();
